@@ -1,0 +1,261 @@
+{
+	"info": {
+		"_postman_id": "d0f417d5-05dc-46ba-84f7-8316e74e43e1",
+		"name": "Footballer Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21528697"
+	},
+	"item": [
+		{
+			"name": "Footballer",
+			"item": [
+				{
+					"name": "Footballer/Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Ali\",\r\n    \"surname\":\"Bilmez\",\r\n    \"email\":\"ali@mail.com\",\r\n    \"password\":\"12345\",\r\n    \"age\":19\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/footballer/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"footballer",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Footballer/allSave",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n    [{\r\n  \"name\": \"Koo\",\r\n  \"surname\": \"Dislee\",\r\n  \"email\": \"kdislee0@oakley.com\",\r\n  \"password\": 1,\r\n  \"age\": 26\r\n}, {\r\n  \"name\": \"Alvera\",\r\n  \"surname\": \"Roj\",\r\n  \"email\": \"aroj1@vkontakte.ru\",\r\n  \"password\": 2,\r\n  \"age\": 34\r\n}, {\r\n  \"name\": \"Ayn\",\r\n  \"surname\": \"Brightwell\",\r\n  \"email\": \"abrightwell2@scribd.com\",\r\n  \"password\": 3,\r\n  \"age\": 50\r\n}, {\r\n  \"name\": \"Herta\",\r\n  \"surname\": \"Kleint\",\r\n  \"email\": \"hkleint3@epa.gov\",\r\n  \"password\": 4,\r\n  \"age\": 33\r\n}, {\r\n  \"name\": \"Palm\",\r\n  \"surname\": \"Maffiotti\",\r\n  \"email\": \"pmaffiotti4@ucsd.edu\",\r\n  \"password\": 5,\r\n  \"age\": 40\r\n}, {\r\n  \"name\": \"Cassy\",\r\n  \"surname\": \"Phillis\",\r\n  \"email\": \"cphillis5@wikipedia.org\",\r\n  \"password\": 6,\r\n  \"age\": 47\r\n}, {\r\n  \"name\": \"Adham\",\r\n  \"surname\": \"Kippins\",\r\n  \"email\": \"akippins6@google.com.au\",\r\n  \"password\": 7,\r\n  \"age\": 41\r\n}, {\r\n  \"name\": \"Willem\",\r\n  \"surname\": \"Maskew\",\r\n  \"email\": \"wmaskew7@wiley.com\",\r\n  \"password\": 8,\r\n  \"age\": 48\r\n}, {\r\n  \"name\": \"Margi\",\r\n  \"surname\": \"Czapla\",\r\n  \"email\": \"mczapla8@yolasite.com\",\r\n  \"password\": 9,\r\n  \"age\": 27\r\n}, {\r\n  \"name\": \"Cherice\",\r\n  \"surname\": \"Spinke\",\r\n  \"email\": \"cspinke9@nhs.uk\",\r\n  \"password\": 10,\r\n  \"age\": 25\r\n}, {\r\n  \"name\": \"Johnna\",\r\n  \"surname\": \"McQuin\",\r\n  \"email\": \"jmcquina@bbc.co.uk\",\r\n  \"password\": 11,\r\n  \"age\": 45\r\n}, {\r\n  \"name\": \"Lothario\",\r\n  \"surname\": \"Romaynes\",\r\n  \"email\": \"lromaynesb@zimbio.com\",\r\n  \"password\": 12,\r\n  \"age\": 30\r\n}, {\r\n  \"name\": \"Tabitha\",\r\n  \"surname\": \"Josipovic\",\r\n  \"email\": \"tjosipovicc@cbc.ca\",\r\n  \"password\": 13,\r\n  \"age\": 43\r\n}, {\r\n  \"name\": \"Audrye\",\r\n  \"surname\": \"Fronks\",\r\n  \"email\": \"afronksd@weebly.com\",\r\n  \"password\": 14,\r\n  \"age\": 25\r\n}, {\r\n  \"name\": \"Torrance\",\r\n  \"surname\": \"Hyndley\",\r\n  \"email\": \"thyndleye@economist.com\",\r\n  \"password\": 15,\r\n  \"age\": 48\r\n}, {\r\n  \"name\": \"Jakob\",\r\n  \"surname\": \"Shuttle\",\r\n  \"email\": \"jshuttlef@forbes.com\",\r\n  \"password\": 16,\r\n  \"age\": 25\r\n}, {\r\n  \"name\": \"Jabez\",\r\n  \"surname\": \"Kummerlowe\",\r\n  \"email\": \"jkummerloweg@prlog.org\",\r\n  \"password\": 17,\r\n  \"age\": 31\r\n}, {\r\n  \"name\": \"Janie\",\r\n  \"surname\": \"Longhorn\",\r\n  \"email\": \"jlonghornh@sakura.ne.jp\",\r\n  \"password\": 18,\r\n  \"age\": 44\r\n}, {\r\n  \"name\": \"Ad\",\r\n  \"surname\": \"Taunton\",\r\n  \"email\": \"atauntoni@washington.edu\",\r\n  \"password\": 19,\r\n  \"age\": 28\r\n}, {\r\n  \"name\": \"Addy\",\r\n  \"surname\": \"China\",\r\n  \"email\": \"achinaj@shop-pro.jp\",\r\n  \"password\": 20,\r\n  \"age\": 24\r\n}, {\r\n  \"name\": \"Zelma\",\r\n  \"surname\": \"Usborn\",\r\n  \"email\": \"zusbornk@cloudflare.com\",\r\n  \"password\": 21,\r\n  \"age\": 40\r\n}, {\r\n  \"name\": \"Serge\",\r\n  \"surname\": \"Wantling\",\r\n  \"email\": \"swantlingl@washington.edu\",\r\n  \"password\": 22,\r\n  \"age\": 25\r\n}, {\r\n  \"name\": \"Marvin\",\r\n  \"surname\": \"Gorbell\",\r\n  \"email\": \"mgorbellm@oaic.gov.au\",\r\n  \"password\": 23,\r\n  \"age\": 22\r\n}, {\r\n  \"name\": \"Guinna\",\r\n  \"surname\": \"Sykora\",\r\n  \"email\": \"gsykoran@ning.com\",\r\n  \"password\": 24,\r\n  \"age\": 41\r\n}, {\r\n  \"name\": \"Deena\",\r\n  \"surname\": \"Hutt\",\r\n  \"email\": \"dhutto@drupal.org\",\r\n  \"password\": 25,\r\n  \"age\": 50\r\n}, {\r\n  \"name\": \"Christa\",\r\n  \"surname\": \"Clynter\",\r\n  \"email\": \"cclynterp@rediff.com\",\r\n  \"password\": 26,\r\n  \"age\": 35\r\n}, {\r\n  \"name\": \"Izabel\",\r\n  \"surname\": \"Buckleigh\",\r\n  \"email\": \"ibuckleighq@psu.edu\",\r\n  \"password\": 27,\r\n  \"age\": 37\r\n}, {\r\n  \"name\": \"Ingunna\",\r\n  \"surname\": \"Brine\",\r\n  \"email\": \"ibriner@princeton.edu\",\r\n  \"password\": 28,\r\n  \"age\": 47\r\n}, {\r\n  \"name\": \"Thomasa\",\r\n  \"surname\": \"Toop\",\r\n  \"email\": \"ttoops@bluehost.com\",\r\n  \"password\": 29,\r\n  \"age\": 40\r\n}, {\r\n  \"name\": \"Orel\",\r\n  \"surname\": \"Newman\",\r\n  \"email\": \"onewmant@miitbeian.gov.cn\",\r\n  \"password\": 30,\r\n  \"age\": 34\r\n}, {\r\n  \"name\": \"Kristopher\",\r\n  \"surname\": \"Menicomb\",\r\n  \"email\": \"kmenicombu@mtv.com\",\r\n  \"password\": 31,\r\n  \"age\": 39\r\n}, {\r\n  \"name\": \"Vivien\",\r\n  \"surname\": \"Tortice\",\r\n  \"email\": \"vtorticev@diigo.com\",\r\n  \"password\": 32,\r\n  \"age\": 43\r\n}, {\r\n  \"name\": \"Patti\",\r\n  \"surname\": \"Autie\",\r\n  \"email\": \"pautiew@jigsy.com\",\r\n  \"password\": 33,\r\n  \"age\": 26\r\n}, {\r\n  \"name\": \"Maynard\",\r\n  \"surname\": \"Domnin\",\r\n  \"email\": \"mdomninx@nps.gov\",\r\n  \"password\": 34,\r\n  \"age\": 40\r\n}, {\r\n  \"name\": \"Franklyn\",\r\n  \"surname\": \"Boards\",\r\n  \"email\": \"fboardsy@gizmodo.com\",\r\n  \"password\": 35,\r\n  \"age\": 36\r\n}, {\r\n  \"name\": \"Moselle\",\r\n  \"surname\": \"Elstub\",\r\n  \"email\": \"melstubz@networksolutions.com\",\r\n  \"password\": 36,\r\n  \"age\": 23\r\n}, {\r\n  \"name\": \"Melany\",\r\n  \"surname\": \"Thonason\",\r\n  \"email\": \"mthonason10@marketwatch.com\",\r\n  \"password\": 37,\r\n  \"age\": 36\r\n}, {\r\n  \"name\": \"Brandea\",\r\n  \"surname\": \"Pomfret\",\r\n  \"email\": \"bpomfret11@squidoo.com\",\r\n  \"password\": 38,\r\n  \"age\": 35\r\n}, {\r\n  \"name\": \"Jobey\",\r\n  \"surname\": \"McGuinley\",\r\n  \"email\": \"jmcguinley12@narod.ru\",\r\n  \"password\": 39,\r\n  \"age\": 46\r\n}, {\r\n  \"name\": \"Friedrick\",\r\n  \"surname\": \"Suermeiers\",\r\n  \"email\": \"fsuermeiers13@paginegialle.it\",\r\n  \"password\": 40,\r\n  \"age\": 44\r\n}, {\r\n  \"name\": \"Brittni\",\r\n  \"surname\": \"Dy\",\r\n  \"email\": \"bdy14@pinterest.com\",\r\n  \"password\": 41,\r\n  \"age\": 26\r\n}, {\r\n  \"name\": \"Colleen\",\r\n  \"surname\": \"Sargison\",\r\n  \"email\": \"csargison15@rakuten.co.jp\",\r\n  \"password\": 42,\r\n  \"age\": 22\r\n}, {\r\n  \"name\": \"Guinna\",\r\n  \"surname\": \"Onge\",\r\n  \"email\": \"gonge16@deliciousdays.com\",\r\n  \"password\": 43,\r\n  \"age\": 32\r\n}, {\r\n  \"name\": \"Farica\",\r\n  \"surname\": \"Eccleshare\",\r\n  \"email\": \"feccleshare17@list-manage.com\",\r\n  \"password\": 44,\r\n  \"age\": 44\r\n}, {\r\n  \"name\": \"Dolorita\",\r\n  \"surname\": \"Christene\",\r\n  \"email\": \"dchristene18@phpbb.com\",\r\n  \"password\": 45,\r\n  \"age\": 27\r\n}, {\r\n  \"name\": \"Margalo\",\r\n  \"surname\": \"Yirrell\",\r\n  \"email\": \"myirrell19@quantcast.com\",\r\n  \"password\": 46,\r\n  \"age\": 22\r\n}, {\r\n  \"name\": \"Heinrik\",\r\n  \"surname\": \"Bannister\",\r\n  \"email\": \"hbannister1a@baidu.com\",\r\n  \"password\": 47,\r\n  \"age\": 35\r\n}, {\r\n  \"name\": \"Peder\",\r\n  \"surname\": \"Rawlcliffe\",\r\n  \"email\": \"prawlcliffe1b@eventbrite.com\",\r\n  \"password\": 48,\r\n  \"age\": 24\r\n}, {\r\n  \"name\": \"Chancey\",\r\n  \"surname\": \"Rosso\",\r\n  \"email\": \"crosso1c@tripod.com\",\r\n  \"password\": 49,\r\n  \"age\": 39\r\n}, {\r\n  \"name\": \"Sabra\",\r\n  \"surname\": \"Creddon\",\r\n  \"email\": \"screddon1d@about.me\",\r\n  \"password\": 50,\r\n  \"age\": 19\r\n}]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/footballer/allSave",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"footballer",
+								"allSave"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Footballer/Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/footballer/delete?fid=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"footballer",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "fid",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Footballer/List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/footballer/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"footballer",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Footballer/Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "   {\r\n    \"fid\":52,\r\n    \"name\":\"Sena\",\r\n    \"surname\":\"Bilmez\",\r\n    \"email\":\"sena@mail.com\",\r\n    \"password\":\"12345\",\r\n    \"age\":19\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/footballer/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"footballer",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Team",
+			"item": [
+				{
+					"name": "Team/Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fid\":9,\r\n    \"teamName\":\"A\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/team/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"team",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Team/List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/team/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"team",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Teams/teamCreate",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "teams",
+									"value": "B",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8090/teams/teamCreate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"teams",
+								"teamCreate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Teams/backUpTeams",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/teams/backUpCreate?teams=A",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"teams",
+								"backUpCreate"
+							],
+							"query": [
+								{
+									"key": "teams",
+									"value": "A"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
